@@ -13,5 +13,10 @@
 		{
 			echo '2';
 		}
+		public function act()
+		{
+			return $this->render('pag
+				e/act');
+		 }
 	}
 ?>

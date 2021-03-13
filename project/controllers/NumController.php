@@ -6,7 +6,7 @@
 	{ 
 		public function numsum($params)
 		{
-			echo array_sum(array_values($));
+			echo array_sum(array_values($params));
 		}
 	}
 ?>

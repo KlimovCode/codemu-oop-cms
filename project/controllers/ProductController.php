@@ -42,7 +42,7 @@
 		public function show($id)
 		{
 			//var_dump($this->products[$id]);
-			return $this->render('product/show', $id);
+			return $this->render('product/show', $this->products[$id]);
 		}
 	}
 ?>

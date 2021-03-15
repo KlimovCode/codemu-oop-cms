@@ -4,6 +4,29 @@
 	
 	class PageController extends Controller
 	{ 
+	  private $pages;
+	  public function __construct() {
+	    $this->pages = [
+		1 => ['title'=>'страница 1',
+			 'text'=>'тек
+			ст страницы 1'],
+		 2 => ['title'=>'страница 2',
+			 'text'=>'тек
+			ст страницы 2'],
+		 3 => ['title'=>'страница 3',
+			 'text'=>'тек
+			ст страницы 3'],
+	] ;
+	 
+    }
+	  public function show($id)
+		{
+		  $title = $this->pages[id]['title'];
+		  $content = $this->pages[id]['text'];
+			return $this->render('pag
+				e/show', $content, $title);
+		 
+	  }
 		public function show1()
 		{
 			echo '1';

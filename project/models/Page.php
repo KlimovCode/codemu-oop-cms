@@ -7,10 +7,11 @@
 		public function getById($id)
 		{
 			return $this->findOne("SELECT * FROM page WHERE id=$id");
-		}
+		 }
 		
-		public function getAll()
-		{
-			return $this->findMany("SELECT id, title FROM page");
-		}
+		public function getByRange($from, $to)
+		 {
+			return $this->findAll("SELECT * FROM page WHERE id>=$f
+rom AND id<=$to");
+		 }
 	}

@@ -22,9 +22,9 @@
 	  public function show($id)
 		{
 		  $title = $this->pages[id]['title'];
-		  $content = $this->pages[id]['text'];
+		  $text = $this->pages[id]['text'];
 			return $this->render('pag
-				e/show', $content, $title);
+				e/show', $text, $title);
 		 
 	  }
 		public function show1()

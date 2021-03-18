@@ -11,7 +11,6 @@
 		
 		public function getByRange($from, $to)
 		 {
-			return $this->findAll("SELECT * FROM page WHERE id>=$f
-rom AND id<=$to");
+			return $this->findAll("SELECT * FROM page WHERE id>=$from AND id<=$to");
 		 }
 	}

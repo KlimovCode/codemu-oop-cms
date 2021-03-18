@@ -11,7 +11,7 @@
 			$layoutPath = $_SERVER['DOCUMENT_ROOT'] . "/project/layouts/{$page->layout}.php";
 			
 			if (file_exists($layoutPath)) {
-				ob_start();
+                ob_start();
 					$title = $page->title;
 					include $layoutPath;
 				return ob_get_clean();
